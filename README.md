@@ -33,9 +33,7 @@ web application for evaluation and demonstration.
 
 ## c. GitHub Repository Link
 
-> https://github.com/<your-username>/<your-repo-name>
->
-> *(Update this link once the repository has been pushed to GitHub.)*
+> https://github.com/RISHIKESH-K-U/ML-Assignment-2
 
 ## d. Models Used
 
