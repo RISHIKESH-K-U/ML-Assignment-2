@@ -99,5 +99,3 @@ streamlit run app.py
 ## Live Streamlit App
 
 > https://ml-assignment-2-german-credit-risk.streamlit.app/
->
-> *(Update this link once deployed on Streamlit Community Cloud.)*
