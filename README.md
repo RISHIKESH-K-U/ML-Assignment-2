@@ -33,7 +33,7 @@ web application for evaluation and demonstration.
 
 ## c. GitHub Repository Link
 
-> https://github.com/RISHIKESH-K-U/ML-Assignment-2
+> [https://github.com/RISHIKESH-K-U/ML-Assignment-2](https://github.com/RISHIKESH-K-U/ML-Assignment-2)
 
 ## d. Models Used
 
@@ -98,4 +98,4 @@ streamlit run app.py
 
 ## Live Streamlit App
 
-> https://ml-assignment-2-german-credit-risk.streamlit.app/
+> [https://ml-assignment-2-german-credit-risk.streamlit.app/](https://ml-assignment-2-german-credit-risk.streamlit.app/)
