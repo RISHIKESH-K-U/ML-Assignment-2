@@ -63,39 +63,3 @@ described above.
 | Naive Bayes                | Highest precision (0.833) but lowest recall (0.679) — conservative, only labels an applicant "good" when very confident, missing many actual good applicants. The independence assumption between the 20 correlated features (e.g. credit amount vs. duration) likely limits its ceiling, but it still achieves a respectable MCC (0.335), the 2nd best. |
 | Random Forest (Ensemble)   | Best across nearly every metric — highest Accuracy (0.750), AUC (0.795), F1 (0.833) and MCC (0.355). By averaging many decorrelated decision trees it reduces the overfitting seen in the single Decision Tree while still capturing non-linear feature interactions, giving the most balanced and reliable predictions. |
 | **Overall Winner for your dataset?** | **Random Forest (Ensemble)** — it dominates on Accuracy, AUC, F1 and MCC (the most reliable metric for imbalanced binary classification), making it the most trustworthy model for this credit-risk dataset. |
-
-## Repository Structure
-
-```
-project-folder/
-├── app.py                     # Streamlit app (main entry point)
-├── requirements.txt           # Python dependencies
-├── README.md                  # This file
-├── test_data.csv              # Held-out test set used by the Streamlit app
-├── data/
-│   └── german_credit.csv      # Full cleaned dataset
-└── model/
-    ├── prepare_data.py        # Downloads & cleans the UCI dataset
-    ├── train_models.py        # Trains all 5 models, computes metrics, saves pipelines
-    ├── metrics_comparison.csv # Generated comparison table
-    └── *.joblib               # Saved trained model pipelines
-```
-
-## How to Run Locally
-
-```bash
-python -m venv venv
-source venv/bin/activate        # On Windows: venv\Scripts\activate
-pip install -r requirements.txt
-
-# Regenerate data/models if needed:
-python model/prepare_data.py
-python model/train_models.py
-
-# Launch the app:
-streamlit run app.py
-```
-
-## Live Streamlit App
-
-> [https://ml-assignment-2-german-credit-risk.streamlit.app/](https://ml-assignment-2-german-credit-risk.streamlit.app/)
